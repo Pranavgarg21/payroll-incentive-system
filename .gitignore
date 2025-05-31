@@ -1,0 +1,10 @@
+# Ignore Python virtual env
+venv/
+__pycache__/
+
+# Ignore Node modules
+payroll-frontend/node_modules/
+payroll-frontend/build/
+
+# Ignore system files
+.DS_Store

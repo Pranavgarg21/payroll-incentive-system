@@ -1,0 +1,20 @@
+{
+  "name": "skilled technician",
+  "totalLabour": "",
+  "freeServices": "",
+  "pdi": "",
+  "fittings": "",
+  "wheelTurning": "",
+  "hubSetting": "",
+  "tyreFitting": "",
+  "workingDays": "",
+  "advance": 0,
+  "month": "",
+  "employeeId": "101",
+  "location": "calicut",
+  "category": "skilled_technician",
+  "labourIncentive": 0,
+  "salary": 0,
+  "serviceIncentive": 0,
+  "totalIncentive": 0
+}
