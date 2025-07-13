@@ -1,18 +1,15 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // adjust the path as needed
+import logo from '../assets/logo.png'; // adjust this path if needed
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1e1e1e] text-white py-6 mt-12">
-      <div className="flex flex-col items-center justify-center gap-3">
+    <footer className="bg-[#1a1a1a] py-10 mt-12 text-center">
+      <div className="flex flex-col items-center">
         <img
           src={logo}
           alt="Lumeitup Logo"
-          className="h-10 w-auto rounded-sm"
+          className="w-32 sm:w-40 md:w-48 mb-4"
         />
-        <p className="text-sm">
-          Built with <span className="text-yellow-400">💡</span> by <strong>Lumeitup</strong>
-        </p>
         <a
           href="https://lumeitup.com"
           target="_blank"
