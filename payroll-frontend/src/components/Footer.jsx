@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Adjust the path to your logo if needed
+import logo from '../assets/logo.png'; // adjust if needed
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-4 mt-auto text-center">
+    <footer className="bg-black text-white py-6 text-center">
       <div className="flex flex-col items-center justify-center">
         <img
           src={logo}
