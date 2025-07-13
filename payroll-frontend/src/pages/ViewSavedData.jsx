@@ -8,7 +8,7 @@ const ViewSavedData = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get(`http://127.0.0.1:5000/view/${location}`);
+      const res = await axios.get(`https://ev-motors.onrender.com/view/${location}`);
       setEntries(res.data);
     } catch (err) {
       console.error(err);

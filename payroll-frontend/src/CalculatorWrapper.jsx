@@ -15,7 +15,7 @@ const CalculatorWrapper = ({
   const handleCalculate = async () => {
     try {
       const payload = getPayload();
-      const response = await axios.post('http://127.0.0.1:5000/calculate', {
+      const response = await axios.post('https://ev-motors.onrender.com/calculate', {
         location,
         category,
         employeeId,
@@ -31,7 +31,7 @@ const CalculatorWrapper = ({
   const handleSave = async () => {
     try {
       const payload = getPayload();
-      await axios.post('http://127.0.0.1:5000/save', {
+      await axios.post('https://ev-motors.onrender.com/save', {
         location,
         category,
         employeeId,
