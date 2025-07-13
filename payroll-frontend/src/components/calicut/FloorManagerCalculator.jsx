@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ fixed import
 
-export default function FloorManagerCalculator({ location, employeeId, category }) {
+export default function FloorManagerCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -25,6 +25,7 @@ export default function FloorManagerCalculator({ location, employeeId, category 
       title="Floor Manager Incentive – Calicut"
       location={location}
       category={category}
+      employeeName={employeeName}
       employeeId={employeeId}
       getPayload={getPayload}
     >

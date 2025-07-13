@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ make sure this path is correct
 
-export default function TraineeTechnicianCalculator({ location, employeeId, category }) {
+export default function TraineeTechnicianCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -30,6 +30,7 @@ export default function TraineeTechnicianCalculator({ location, employeeId, cate
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

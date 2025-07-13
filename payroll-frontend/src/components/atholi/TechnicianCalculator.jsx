@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields.jsx';
 import CalculatorWrapper from '../../CalculatorWrapper';
 
-export default function TechnicianCalculatorAtholi({ location, employeeId, category }) {
+export default function TechnicianCalculatorAtholi({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -28,6 +28,7 @@ export default function TechnicianCalculatorAtholi({ location, employeeId, categ
     <CalculatorWrapper
       employeeId={employeeId}
       location={location}
+      employeeName={employeeName}
       category={category}
       getPayload={getPayload}
       title="Technician – Atholi"

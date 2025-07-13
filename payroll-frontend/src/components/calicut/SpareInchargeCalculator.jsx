@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // Adjust path based on your folder structure
 
-export default function SpareInchargeCalculator({ location, employeeId, category }) {
+export default function SpareInchargeCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -25,6 +25,7 @@ export default function SpareInchargeCalculator({ location, employeeId, category
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

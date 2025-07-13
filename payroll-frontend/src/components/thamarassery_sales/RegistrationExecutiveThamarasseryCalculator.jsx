@@ -1,7 +1,7 @@
 import React from 'react';
 import CalculatorWrapper from '../../CalculatorWrapper';
 
-export default function RegistrationExecutiveThamarasseryCalculator({ location, employeeId, category }) {
+export default function RegistrationExecutiveThamarasseryCalculator({ location, employeeId, category, employeeName }) {
   const getPayload = () => ({
     note: 'No incentive applicable for this role.'
   });
@@ -11,6 +11,7 @@ export default function RegistrationExecutiveThamarasseryCalculator({ location, 
       title="Registration Executive – Thamarassery"
       location={location}
       category={category}
+      employeeName={employeeName}
       employeeId={employeeId}
       getPayload={getPayload}
     >

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ for calicut folder
 
-export default function ServiceInchargeCalculator({ location, employeeId, category }) {
+export default function ServiceInchargeCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -27,6 +27,7 @@ export default function ServiceInchargeCalculator({ location, employeeId, catego
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

@@ -94,6 +94,7 @@ def calculate_service_consultant_thamarassery(data):
     return {
         'incentiveBreakdown': round(incentive, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -117,6 +118,7 @@ def calculate_sme_thamarassery(data):
     return {
         'targetBonus': bonus,
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -152,6 +154,7 @@ def calculate_technician_thamarassery(data):
         'labourIncentive': round(incentive, 2),
         'serviceIncentive': round(service, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 def calculate_trainee_technician_thamarassery(data):
@@ -186,6 +189,7 @@ def calculate_trainee_technician_thamarassery(data):
         'labourIncentive': round(incentive, 2),
         'serviceIncentive': round(service, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 def calculate_spare_parts_manager_thamarassery(data):
@@ -202,6 +206,7 @@ def calculate_spare_parts_manager_thamarassery(data):
     return {
         'spareIncentive': round(incentive, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -239,6 +244,7 @@ def calculate_skilled(data):
         'labourIncentive': round(incentive, 2),
         'serviceIncentive': round(service, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -282,6 +288,7 @@ def calculate_service_advisor(data):
         'spareIncentive': round(spare_incentive, 2),
         'serviceIncentive': round(service_incentive, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -312,6 +319,7 @@ def calculate_service_incharge(data):
         'gmaIncentive': round(gma_incentive, 2),
         'targetBonus': round(target_bonus, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -337,6 +345,7 @@ def calculate_spare_incharge(data):
         'fixedBonus': fixed_bonus,
         'totalIncentive': round(total, 2),
         'incentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -359,6 +368,7 @@ def calculate_floor_manager(data):
         'labourIncentive': round(labour_incentive, 2),
         'spareIncentive': round(spare_incentive, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 
@@ -381,6 +391,7 @@ def calculate_warranty_manager(data):
         'warrantyIncentive': round(warranty_incentive, 2),
         'pdiIncentive': pdi_incentive,
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 def calculate_technician_atholi(data):
@@ -403,6 +414,7 @@ def calculate_sales_exec_atholi(data):
     return {
         'retailIncentive': round(incentive, 2),
         'totalIncentive': round(total, 2),
+        'incentive': round(total, 2),
         **salary_data
     }
 def calculate_technician_engapuzha(data):
@@ -419,6 +431,7 @@ def calculate_sales_exec_engapuzha(data):
     return {
         'retailIncentive': incentive,
         'totalIncentive': incentive + salary_data["salary"],
+        'incentive': incentive + salary_data["salary"],
         **salary_data
     }
 
@@ -443,6 +456,7 @@ def calculate_service_advisor_engapuzha(data):
         'spareIncentive': spare_incentive,
         'amc': amc + ew + rsa + special,
         'totalIncentive': round(incentive + salary_data["salary"], 2),
+        'incentive': round(incentive + salary_data["salary"], 2),
         **salary_data
     }
 def calculate_sales_manager(data):
@@ -468,7 +482,8 @@ def calculate_sales_manager(data):
         "gmaIncentive": round(gmaIncentive, 2),
         "gearIncentive": round(gearIncentive, 2),
         "rsaIncentive": round(rsaIncentive, 2),
-        "totalIncentive": round(total, 2)
+        "totalIncentive": round(total, 2),
+        'incentive': round(total, 2),
     }
 def calculate_sales_exec(data):
     # Same structure as manager but possibly different slabs
@@ -493,6 +508,7 @@ def calculate_sales_exec(data):
         "gmaIncentive": round(gmaIncentive, 2),
         "gearIncentive": round(gearIncentive, 2),
         "rsaIncentive": round(rsaIncentive, 2),
+        'incentive': round(total, 2),
         "totalIncentive": round(total, 2)
     }
 
@@ -518,6 +534,7 @@ def calculate_delivery_exec(data):
         "gmaIncentive": round(gmaIncentive, 2),
         "gearIncentive": round(gearIncentive, 2),
         "rsaIncentive": round(rsaIncentive, 2),
+        'incentive': round(total, 2),
         "totalIncentive": round(total, 2)
     }
 def calculate_cashier(data):

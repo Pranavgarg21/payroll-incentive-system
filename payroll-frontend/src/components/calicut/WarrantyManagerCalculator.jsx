@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ Adjust if path differs
 
-export default function WarrantyManagerCalculator({ location, employeeId, category }) {
+export default function WarrantyManagerCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -25,6 +25,7 @@ export default function WarrantyManagerCalculator({ location, employeeId, catego
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

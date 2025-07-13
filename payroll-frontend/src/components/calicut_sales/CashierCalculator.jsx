@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields';
 import CalculatorWrapper from '../../CalculatorWrapper'; // Adjust path if needed
 
-const CashierCalculator = ({ employeeId, location, category }) => {
+const CashierCalculator = ({ employeeId, location, category, employeeName }) => {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -25,6 +25,7 @@ const CashierCalculator = ({ employeeId, location, category }) => {
       title="Cashier Incentive – Calicut"
       location={location}
       category={category}
+      employeeName={employeeName}
       employeeId={employeeId}
       getPayload={getPayload}
     >

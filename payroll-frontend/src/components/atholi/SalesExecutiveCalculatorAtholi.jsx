@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields.jsx';
 import CalculatorWrapper from '../../CalculatorWrapper';
 
-export default function SalesExecutiveCalculatorAtholi({ location, employeeId, category }) {
+export default function SalesExecutiveCalculatorAtholi({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -23,6 +23,7 @@ export default function SalesExecutiveCalculatorAtholi({ location, employeeId, c
   return (
     <CalculatorWrapper
       employeeId={employeeId}
+      employeeName={employeeName}
       location={location}
       category={category}
       getPayload={getPayload}

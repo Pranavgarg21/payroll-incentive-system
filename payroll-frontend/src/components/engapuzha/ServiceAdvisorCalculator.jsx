@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CommonFields from '../CommonFields.jsx';
 import CalculatorWrapper from '../../CalculatorWrapper'; // adjust path if needed
 
-export default function ServiceAdvisorEngapuzha({ location, employeeId, category }) {
+export default function ServiceAdvisorEngapuzha({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -29,6 +29,7 @@ export default function ServiceAdvisorEngapuzha({ location, employeeId, category
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CalculatorWrapper from '../../CalculatorWrapper';
 import CommonFields from '../CommonFields';
 
-export default function SalesManagerThamarasseryCalculator({ location, employeeId, category }) {
+export default function SalesManagerThamarasseryCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     month: '',
     workingDays: '',
@@ -29,6 +29,7 @@ export default function SalesManagerThamarasseryCalculator({ location, employeeI
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <CommonFields formData={formData} handleChange={handleChange} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ adjust path based on your structure
 
-export default function SkilledTechnicianCalculator({ location, employeeId, category }) {
+export default function SkilledTechnicianCalculator({ location, employeeId, category, employeeName }) {
   const [formData, setFormData] = useState({
     name: '',
     totalLabour: '',
@@ -30,6 +30,7 @@ export default function SkilledTechnicianCalculator({ location, employeeId, cate
       location={location}
       category={category}
       employeeId={employeeId}
+      employeeName={employeeName}
       getPayload={getPayload}
     >
       <div className="grid grid-cols-2 gap-4">
