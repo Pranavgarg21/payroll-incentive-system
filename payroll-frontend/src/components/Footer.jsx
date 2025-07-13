@@ -1,32 +1,26 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Make sure to update this path if needed
+import logo from '../assets/logo.png'; // adjust the path as needed
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-5">
-      <div className="container text-center">
+    <footer className="bg-[#1e1e1e] text-white py-6 mt-12">
+      <div className="flex flex-col items-center justify-center gap-3">
         <img
           src={logo}
           alt="Lumeitup Logo"
-          style={{ height: '50px', marginBottom: '10px' }}
+          className="h-10 w-auto rounded-sm"
         />
-
-        <p className="mt-2 mb-1">
-          Built with 💡 by <strong>Lumeitup</strong>
+        <p className="text-sm">
+          Built with <span className="text-yellow-400">💡</span> by <strong>Lumeitup</strong>
         </p>
-
         <a
           href="https://lumeitup.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-light text-decoration-underline"
+          className="text-blue-400 hover:underline text-sm"
         >
           Visit our website
         </a>
-
-        <p className="mt-3 text-muted" style={{ fontSize: '0.85rem' }}>
-          © {new Date().getFullYear()} Lumeitup. All rights reserved.
-        </p>
       </div>
     </footer>
   );
