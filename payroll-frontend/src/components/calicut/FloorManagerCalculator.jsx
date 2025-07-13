@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import CommonFields from './CommonFields';
+import CommonFields from '../CommonFields';
+import CalculatorWrapper from '../../CalculatorWrapper'; // ✅ fixed import
 
 export default function FloorManagerCalculator({ location, employeeId, category }) {
   const [formData, setFormData] = useState({
@@ -14,32 +14,20 @@ export default function FloorManagerCalculator({ location, employeeId, category 
   });
 
   const [result, setResult] = useState(null);
-  const [isSaved, setIsSaved] = useState(false);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleCalculate = async () => {
-    try {
-      const payload = {
-        ...formData,
-        location,
-        employeeId,
-        category
-      };
-      const res = await axios.post(`http://127.0.0.1:5000/calculate/${category}`, payload);
-      setResult(res.data);
-      setIsSaved(false);
-    } catch (error) {
-      console.error(error);
-      alert("Calculation failed");
-    }
-  };
+  const getPayload = () => ({ ...formData });
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Floor Manager Incentive</h2>
+    <CalculatorWrapper
+      title="Floor Manager Incentive – Calicut"
+      location={location}
+      category={category}
+      employeeId={employeeId}
+      getPayload={getPayload}
+    >
       <CommonFields formData={formData} handleChange={handleChange} />
 
       <label>Labour (₹):
@@ -48,8 +36,6 @@ export default function FloorManagerCalculator({ location, employeeId, category 
       <label>Spare (₹):
         <input type="number" name="spare" value={formData.spare} onChange={handleChange} />
       </label>
-
-      <button onClick={handleCalculate} className="bg-blue-600 text-white px-4 py-2 mt-4">Calculate</button>
 
       {result && (
         <div className="mt-4 p-4 bg-gray-100 rounded border">
@@ -62,6 +48,6 @@ export default function FloorManagerCalculator({ location, employeeId, category 
           <p className="text-xl mt-2"><strong>✅ Total Incentive:</strong> ₹{result.totalIncentive}</p>
         </div>
       )}
-    </div>
+    </CalculatorWrapper>
   );
 }

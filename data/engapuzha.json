@@ -1,0 +1,21 @@
+[
+  {
+    "employeeId": "0",
+    "category": "technician_engapuzha",
+    "data": {
+      "month": "february",
+      "workingDays": "4",
+      "advance": "200",
+      "baseSalary": 12000,
+      "overtimeHours": "20",
+      "labour": "33",
+      "freeServices": "33",
+      "pdi": "3",
+      "fittings": "3",
+      "wheelTurning": "3",
+      "hubSetting": "3",
+      "tyreFitting": "3",
+      "result": 0
+    }
+  }
+]

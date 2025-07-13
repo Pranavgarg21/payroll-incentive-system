@@ -1,0 +1,16 @@
+[
+  {
+    "employeeId": "0",
+    "category": "spare_incharge",
+    "data": {
+      "month": "february",
+      "workingDays": "27",
+      "advance": "400",
+      "baseSalary": 15000,
+      "overtimeHours": "0",
+      "counterSale": "0",
+      "spareTotal": "0",
+      "result": 14600
+    }
+  }
+]

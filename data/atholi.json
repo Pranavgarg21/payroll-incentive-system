@@ -1,0 +1,40 @@
+[
+  {
+    "employeeId": "0",
+    "category": "technician_atholi",
+    "data": {
+      "month": "",
+      "workingDays": "",
+      "advance": "",
+      "baseSalary": 15000,
+      "overtimeHours": "",
+      "labour": "",
+      "freeServices": "",
+      "pdi": "",
+      "fittings": "",
+      "wheelTurning": "",
+      "hubSetting": "",
+      "tyreFitting": "",
+      "result": 0
+    }
+  },
+  {
+    "employeeId": "0",
+    "category": "technician_atholi",
+    "data": {
+      "month": "",
+      "workingDays": "",
+      "advance": "",
+      "baseSalary": 15000,
+      "overtimeHours": "",
+      "labour": "",
+      "freeServices": "",
+      "pdi": "",
+      "fittings": "",
+      "wheelTurning": "",
+      "hubSetting": "",
+      "tyreFitting": "",
+      "result": 0
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "employeeId": "0",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "31",
+      "advance": "400",
+      "baseSalary": 20000,
+      "overtimeHours": "",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 20245.16
+    }
+  },
+  {
+    "employeeId": "0",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "30",
+      "advance": "",
+      "baseSalary": 20000,
+      "overtimeHours": "9",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 20725.81
+    }
+  },
+  {
+    "employeeId": "0",
+    "employeeName": null,
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "30",
+      "advance": "200",
+      "baseSalary": 20000,
+      "overtimeHours": "20",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 21412.9
+    }
+  },
+  {
+    "employeeId": "0",
+    "employeeName": "",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "30",
+      "advance": "",
+      "baseSalary": 20000,
+      "overtimeHours": "",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 20000
+    }
+  },
+  {
+    "employeeId": "0",
+    "employeeName": "",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "30",
+      "advance": "",
+      "baseSalary": 20000,
+      "overtimeHours": "",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 20000
+    }
+  },
+  {
+    "employeeId": "0",
+    "employeeName": "",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "4",
+      "advance": "",
+      "baseSalary": 20000,
+      "overtimeHours": "",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 2580.65
+    }
+  },
+  {
+    "employeeId": "0",
+    "employeeName": "John",
+    "category": "service_manager_thamarassery",
+    "data": {
+      "month": "january",
+      "workingDays": "30",
+      "advance": "",
+      "baseSalary": 20000,
+      "overtimeHours": "",
+      "labour": "",
+      "spare": "",
+      "gma": "",
+      "result": 20000
+    }
+  }
+]
