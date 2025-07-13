@@ -11,7 +11,7 @@ const Footer = () => {
           className="h-10 w-auto mb-2" // 👈 smaller height
         />
         <a
-          href="https://your-website.com"
+          href="https://lumeitup.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-blue-400 hover:underline"
