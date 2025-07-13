@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // adjust if needed
+import logo from '../assets/logo.png'; // Adjust path if needed
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6 text-center">
-      <div className="flex flex-col items-center justify-center">
+    <footer className="bg-black text-white py-4 text-center">
+      <div className="flex flex-col items-center">
         <img
           src={logo}
           alt="Lumeitup Logo"
-          className="h-12 w-auto mb-2"
+          className="h-10 w-auto mb-2" // 👈 smaller height
         />
         <a
           href="https://your-website.com"
